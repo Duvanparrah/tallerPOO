@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Sistema de cursos</title>
+    <script defer src="cursos.js"></script>
+</head>
+<body class="bg-red-200">
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold text-center">COURSERA DE TEMU</h1>
+        <p class="text-center p-5">Aprendamos todos de las manos, ¡cucuuuy!</p>
+        
+        <div class="flex space-x-4 mt-2">
+<!-- div para curso presencial -->
+            <div class="bg-red-100 p-2 rounded-lg shadow-lg w-auto mx-auto h-auto">
+                <h2 class="text-center text-2x3 font-bold mb-0">ESTUDIANTES</h2>
+                <p class="text-center p-1 font-bold underline">curso presencial</p>
+                
+                <div class="flex items-center mb-1">
+                    <label for="marca" class="w-1/3">Nombre:</label>
+                    <input type="text" id="nombreEstudiante" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                
+                <div class="flex items-center mb-1">
+                    <label for="modelo" class="w-1/3">Edad:</label>
+                    <input type="number" id="edadEstudiante" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                <h2 class="text-center text-2x3 font-bold mb-1">CALIFICACIONES</h2>
+
+                <div class="flex items-center mb-1">
+                    <label for="marca" class="w-1/3">1° corte:</label>
+                    <input type="number" id="calificacion1" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                
+                <div class="flex items-center mb-1">
+                    <label for="modelo" class="w-1/3">2° corte:</label>
+                    <input type="number" id="calificacion2" class="border rounded p-1 w-2/3 h-6">
+                </div>
+
+                <div class="flex items-center mb-1">
+                    <label for="modelo" class="w-1/3">3° corte:</label>
+                    <input type="number" id="calificacion3" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                     
+                
+                <div class="flex justify-center p-4">
+                    <button class="bg-blue-400 text-white p-0.5 rounded hover:bg-blue-600 w-20" onclick="guardar()">Guardar</button>
+                </div>
+            </div>
+<!-- div para el curso virutal -->
+            <div class="bg-red-100 p-2 rounded-lg shadow-lg w-auto mx-auto h-auto">
+                <h2 class="text-center text-2x3 font-bold mb-0">ESTUDIANTES</h2> 
+                <p class="text-center p-1 font-bold underline">curso virtual</p>
+                
+                <div class="flex items-center mb-1">
+                    <label for="marca" class="w-1/3">Nombre:</label>
+                    <input type="text" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                
+                <div class="flex items-center mb-1">
+                    <label for="modelo" class="w-1/3">Edad:</label>
+                    <input type="number" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                <h2 class="text-center text-2x3 font-bold mb-1">CALIFICACIONES</h2>
+
+                <div class="flex items-center mb-1">
+                    <label for="marca" class="w-1/3">1° corte:</label>
+                    <input type="number" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                
+                <div class="flex items-center mb-1">
+                    <label for="modelo" class="w-1/3">2° corte:</label>
+                    <input type="number" class="border rounded p-1 w-2/3 h-6">
+                </div>
+
+                <div class="flex items-center mb-1">
+                    <label for="modelo" class="w-1/3">3° corte:</label>
+                    <input type="number" class="border rounded p-1 w-2/3 h-6">
+                </div>
+                     
+                
+                <div class="flex justify-center p-4">
+                    <button class="bg-blue-400 text-white p-0.5 rounded hover:bg-blue-600 w-20" onclick="guardar()">Guardar</button>
+                </div>
+            </div>
+<!-- div para el promedio -->
+<div class="bg-red-100 p-2 rounded-lg shadow-lg w-auto mx-auto h-auto">
+    <h2 class="text-center text-2x3 font-bold mb-0">PROMEDIO</h2> 
+    <p class="text-center p-1 font-bold underline">curso presencial</p>
+    
+    <div class="flex items-center mb-1">
+        <input type="text" id="promedioPresencial" class="border rounded p-1 w-2/2 h-6" readonly>
+    </div>
+    
+    <div class="flex justify-center p-4">
+        <button class="bg-blue-400 text-white p-0.5 rounded hover:bg-blue-600 w-20" onclick="guardar()">Calcular</button>
+    </div>
+    
+    <h2 class="text-center text-2x3 font-bold mb-0">PROMEDIO</h2> 
+    <p class="text-center p-1 font-bold underline">curso virtual</p>
+    
+    <div class="flex items-center mb-1">
+        <input type="text" id="promedioVirtual" class="border rounded p-1 w-2/2 h-6" readonly>
+    </div>
+    
+    <div class="flex justify-center p-4">
+        <button class="bg-blue-400 text-white p-0.5 rounded hover:bg-blue-600 w-20" onclick="guardar()">Calcular</button>
+    </div>
+</div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

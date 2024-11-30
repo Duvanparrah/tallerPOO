@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tienda de Mascotas</title>
+    <script defer src="mascotas.js"></script>
+</head>
+<body class="bg-gray-100 p-5">
+    <div class="container mx-auto bg-white p-5 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4 text-center">Tienda de Mascotas</h1>
+        
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Agregar Mascota</h2>
+            <form id="formMascota" class="flex flex-col space-y-2">
+                <input type="text" id="nombre" placeholder="Nombre de la Mascota" class="border rounded p-2" required>
+                <select id="tipo" class="border rounded p-2" required>
+                    <option value="">Seleccione un tipo</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </select>
+                <button type="submit" class="bg-blue-500 text-white rounded p-2 ">Agregar Mascota</button>
+            </form>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-semibold mb-2">Mascotas Disponibles</h2>
+            <ul id="mascotasList" class="list-disc pl-5"></ul>
+        </div>
+        
+        <button id="accionesBtn" class="bg-green-500 text-white rounded p-2  mt-4">Hacer que las Mascotas Hablen</button>
+    </div>
+</body>
+</html>
